@@ -1,0 +1,10 @@
+clc;
+clear;
+syms t;
+x_t_ = exp(i*2*pi*t/16)+exp(i*2*pi*t/8);
+xr=sreal(x_t_);
+xi=simag(x_t_);
+%ezplot(real(x_t_));
+%ezplot(imag(x_t_));
+%ezplot(xr,[0:0.1:32]);
+ezplot(xi,[0:0.1:32]);
